@@ -1,0 +1,73 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #111111;
+  font-weight: normal;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  padding: 1rem;
+  margin: 0 auto;
+}
+header {
+  margin: 0 5rem;
+}
+
+header a {
+  width: 100%;
+}
+
+footer {
+  color: #7A7A7A;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+footer a {
+  outline: none;
+  color: #949494;
+}
+
+footer a:hover {
+  color: #7A7A7A;
+}
+
+.popup-content {
+  min-width: 30rem;
+  min-height: 5rem;
+  max-width: 30rem;
+}
+
+.app-name {
+  font-size: 18px;
+  color: #7A7A7A;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  padding: 0;
+}
+
+.action-container {
+  margin: 1rem auto;
+}
+
+.content-save {
+
+}
+
+.content-save .title {
+
+}
+
+.content-save .description {
+
+}
+
+.content-save .selection {
+
+}
