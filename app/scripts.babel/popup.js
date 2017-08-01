@@ -49,7 +49,7 @@ chrome.browserAction.onClicked.addListener(sendMessage());
 document.getElementById('saveSelection').onclick = () => {
 
   let xhr = new XMLHttpRequest()
-  xhr.open('post', 'http://127.0.0.1:7001/note')
+  xhr.open('post', 'http://127.0.0.1:8001/note')
   xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8')
   xhr.send(JSON.stringify(currentData))
   xhr.onreadystatechange = function () {
