@@ -58,3 +58,8 @@ document.getElementById('saveSelection').onclick = () => {
     }
   }
 }
+
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+  sendResponse({'hello':'kkk'});
+  return true;
+});
