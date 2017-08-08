@@ -14,10 +14,17 @@
       "scripts/background.js"
     ]
   },
-  "content_scripts": [ {
-    "js": [ "scripts/content.js" ],
-    "matches": [ "http://*/*", "https://*/*" ]
-  } ],
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ],
   "permissions": [
     "http://*/*",
     "https://*/*",
@@ -42,7 +49,7 @@
     "webRequestBlocking"
   ],
   "options_ui": {
-  "page": "options.html"
+    "page": "options.html"
   },
   "browser_action": {
     "default_icon": {

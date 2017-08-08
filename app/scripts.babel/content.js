@@ -12,10 +12,10 @@ let getLogData = () => {
   return data
 }
 
-let saveLog = (type) =>{
+let saveLog = (type) => {
   let data = getLogData()
   data.type = type
-  chrome.runtime.sendMessage( data, (e)=>{
+  chrome.runtime.sendMessage(data, (e) => {
     console.log(e)
   })
 }
@@ -31,13 +31,6 @@ document.addEventListener('mousedown', e => {
 document.addEventListener('mouseup', (e) => {
   saveLog('mouseup')
 })
-
-document.addEventListener('onscroll', (e) => {
-  saveLog('onscroll')
-})
-
-
-
 
 let extractTags = () => {
   let url = document.location.href;

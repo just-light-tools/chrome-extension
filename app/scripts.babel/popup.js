@@ -54,12 +54,7 @@ document.getElementById('saveSelection').onclick = () => {
   xhr.send(JSON.stringify(currentData))
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      showMsg(JSON.parse(xhr.responseText));
+      showMsg();
     }
   }
 }
-
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  sendResponse({'hello':'kkk'});
-  return true;
-});
